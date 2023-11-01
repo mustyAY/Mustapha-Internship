@@ -33,3 +33,12 @@
     margin-left: 0;
     margin-right: 0;
 }
+
+.slide{
+    padding: 0 8px !important;
+}
+
+.img-fluid{
+    height: 100%;
+    display: flex !important;
+}
