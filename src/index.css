@@ -34,11 +34,43 @@
     margin-right: 0;
 }
 
+.slides{
+    position: relative !important;
+}
+
 .slide{
-    padding: 0 8px !important;
+    padding: 0 4px;
 }
 
 .img-fluid{
     height: 100%;
-    display: flex !important;
+}
+
+.slick-next:before
+{
+    position: absolute;
+    left: -15px;
+    content: '→';
+    color: #8364E2 !important;
+}
+
+.slick-prev:before
+{
+    position: absolute;
+    right: -15px;
+    content: '←';
+    color: #8364E2 !important;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 30px !important;
+    line-height: 1;
+
+    opacity: 1 !important;
+    align-self: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
