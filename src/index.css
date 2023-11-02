@@ -10,3 +10,94 @@
 @import "./css/styles/style.css";
 @import "./css/colors/scheme-01.css";
 @import "./css/styles/coloring.css";
+
+/* carousel arrows */
+
+.arrow__left,
+.arrow__right{
+    position: absolute;
+    top: 50%;
+    height: 45px;
+    width: 45px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    padding: 10px;
+    background-color: white;
+    z-index: 100;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.arrow__left:hover,
+.arrow__right:hover{
+    transform: scale(1.05);
+    box-shadow: rgb(35 35 35 / 50%) 0px 0px 20px 5px;
+}
+
+.arrow__left{
+    left: 0;
+    transform: translateX(-20%);
+}
+
+.arrow__right{
+    right: 0;
+    transform: translateX(20%);
+}
+
+/* carousel slide */
+.slide{
+    padding: 4px;
+}
+
+.img-fluid{
+    height: 100%;
+    width: 100%;
+}
+
+/* carousel dots */
+
+.slick-dots{
+    position: absolute !important;
+    bottom: -24px !important;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.skeleton-box {
+    background-color: #dddbdd;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.skeleton-pp{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.skeleton-fa{
+    height: 14px;
+    width: 14px;
+    right: 10px;
+}
+
+.nft_coll_info {
+    position: relative;
+}
+
+.skeleton-title{
+    height: 20px;
+    width: 100px;
+    margin-bottom: 16px;
+}
+
+.skeleton-code{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 20px;
+    width: 60px;
+    margin-top: 8px;
+}
