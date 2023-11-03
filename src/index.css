@@ -101,3 +101,44 @@
     width: 60px;
     margin-top: 8px;
 }
+
+/* 
+
+NEW ITEMS
+
+*/
+
+.nft__item_wrap{
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.nft__item-info--skeleton{
+    position: relative;
+    margin-top: 8px;
+    height: 60px;
+}
+
+.skeleton__new-item--title{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 30px;
+}
+
+.skeleton__new-item--price{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 20px;
+}
+
+.skeleton__new-item--like{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30px;
+    height: 15px;
+}
