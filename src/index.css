@@ -142,3 +142,32 @@ NEW ITEMS
     width: 30px;
     height: 15px;
 }
+
+/*
+
+    TOP SELLERS
+
+*/
+
+.author_list_info--skeleton{
+    position: relative;
+    margin-left: 70px;
+    height: 50px;
+}
+
+.skeleton__top-seller--name{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 20px;
+}
+
+.skeleton__top-seller--price{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 20px;
+}
+
