@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import NftCard from "../UI/NftCard";
 import NftCardSkeleton from "../UI/NftCardSkeleton";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const ExploreItems = () => {
 
@@ -21,6 +23,10 @@ const ExploreItems = () => {
 
   useEffect(() => {
     getExploreItems(filter);
+    Aos.init({
+        duration: 1500,
+        once: true
+    });
   }, [filter]);
 
   function loadMoreItems() {
@@ -62,7 +68,10 @@ const ExploreItems = () => {
       }
       {
         visibleItems < exploreItems.length - 1 ?
-          <div className="col-md-12 text-center">
+          <div
+            className="col-md-12 text-center"
+            data-aos="fade-in-zoom"
+          >
             <button id="loadmore" className="btn-main lead"
               onClick={() => loadMoreItems()}
             >

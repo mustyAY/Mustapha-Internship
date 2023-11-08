@@ -6,6 +6,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import leftArrow from "../UI/assets/left-arrow.svg";
 import rightArrow from "../UI/assets/right-arrow.svg";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const HotCollections = () => {
 
@@ -17,7 +19,7 @@ const HotCollections = () => {
   );
 
   const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
-        <img src={rightArrow} alt=">" {...props} className="arrow__right" />
+    <img src={rightArrow} alt=">" {...props} className="arrow__right" />
   );
 
   var settings = {
@@ -66,6 +68,10 @@ const HotCollections = () => {
 
   useEffect(() => {
     getHotCollections();
+    Aos.init({
+      duration: 1500,
+      once: true
+    });
   }, [])
 
   return (
@@ -74,7 +80,12 @@ const HotCollections = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className="text-center">
-              <h2>Hot Collections</h2>
+              <h2
+                data-aos="fade-zoom-in"
+                data-aos-duration="250"
+              >
+                Hot Collections
+              </h2>
               <div className="small-border bg-color-2"></div>
             </div>
           </div>

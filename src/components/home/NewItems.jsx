@@ -7,6 +7,8 @@ import leftArrow from "../UI/assets/left-arrow.svg";
 import rightArrow from "../UI/assets/right-arrow.svg";
 import NftCard from "../UI/NftCard";
 import NftCardSkeleton from "../UI/NftCardSkeleton";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const NewItems = () => {
 
@@ -66,6 +68,10 @@ const NewItems = () => {
 
   useEffect(() => {
     getNewItems();
+    Aos.init({
+      duration: 1500,
+      once: true
+    });
   }, []);
 
   return (
@@ -74,7 +80,12 @@ const NewItems = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className="text-center">
-              <h2>New Items</h2>
+              <h2
+                data-aos="fade-zoom-in"
+                data-aos-duration="200"
+              >
+                New Items
+              </h2>
               <div className="small-border bg-color-2"></div>
             </div>
           </div>
@@ -82,15 +93,15 @@ const NewItems = () => {
             !loading ?
               <Slider {...settings} className="slides">
                 {newItems.map((newItem) => (
-                  <div className="slide" key = {newItem.id}>
-                    <NftCard item = {newItem}/>
+                  <div className="slide" key={newItem.id}>
+                    <NftCard item={newItem} />
                   </div>
                 ))}
               </Slider>
               :
               <Slider {...settings} className="slides">
                 {new Array(7).fill(0).map((_, index) => (
-                  <NftCardSkeleton key = {index}/>
+                  <NftCardSkeleton key={index} />
                 ))}
               </Slider>
           }
