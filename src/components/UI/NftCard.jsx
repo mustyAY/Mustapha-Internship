@@ -40,7 +40,7 @@ function NftCard({ item }) {
                           </div>
                         </div>
 
-                        <Link to="/item-details">
+                        <Link to={`/item-details/${item.nftId}`}>
                           <img
                             src={item.nftImage}
                             className="lazy nft__item_preview"
@@ -49,7 +49,7 @@ function NftCard({ item }) {
                         </Link>
                       </div>
                       <div className="nft__item_info">
-                        <Link to="/item-details">
+                        <Link to={`/item-details/${item.nftId}`}>
                           <h4>{item.title}</h4>
                         </Link>
                         <div className="nft__item_price">{item.price} ETH</div>
