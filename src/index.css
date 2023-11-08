@@ -14,7 +14,7 @@
 /* carousel arrows */
 
 .arrow__left,
-.arrow__right{
+.arrow__right {
     position: absolute;
     top: 50%;
     height: 45px;
@@ -29,34 +29,34 @@
 }
 
 .arrow__left:hover,
-.arrow__right:hover{
+.arrow__right:hover {
     transform: scale(1.05);
     box-shadow: rgb(35 35 35 / 50%) 0px 0px 20px 5px;
 }
 
-.arrow__left{
+.arrow__left {
     left: 0;
     transform: translateX(-20%);
 }
 
-.arrow__right{
+.arrow__right {
     right: 0;
     transform: translateX(20%);
 }
 
 /* carousel slide */
-.slide{
+.slide {
     padding: 4px;
 }
 
-.img-fluid{
+.img-fluid {
     height: 100%;
     width: 100%;
 }
 
 /* carousel dots */
 
-.slick-dots{
+.slick-dots {
     position: absolute !important;
     bottom: -24px !important;
     left: 50%;
@@ -70,13 +70,13 @@
     width: 100%;
 }
 
-.skeleton-pp{
+.skeleton-pp {
     height: 50px;
     width: 50px;
     border-radius: 50%;
 }
 
-.skeleton-fa{
+.skeleton-fa {
     height: 14px;
     width: 14px;
     right: 10px;
@@ -86,13 +86,13 @@
     position: relative;
 }
 
-.skeleton-title{
+.skeleton-title {
     height: 20px;
     width: 100px;
     margin-bottom: 16px;
 }
 
-.skeleton-code{
+.skeleton-code {
     position: absolute;
     top: 20px;
     left: 50%;
@@ -108,18 +108,18 @@ NEW ITEMS
 
 */
 
-.nft__item_wrap{
+.nft__item_wrap {
     overflow: hidden;
     border-radius: 8px;
 }
 
-.nft__item-info--skeleton{
+.nft__item-info--skeleton {
     position: relative;
     margin-top: 8px;
     height: 60px;
 }
 
-.skeleton__new-item--title{
+.skeleton__new-item--title {
     position: absolute;
     top: 0;
     left: 0;
@@ -127,7 +127,7 @@ NEW ITEMS
     height: 30px;
 }
 
-.skeleton__new-item--price{
+.skeleton__new-item--price {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -135,7 +135,7 @@ NEW ITEMS
     height: 20px;
 }
 
-.skeleton__new-item--like{
+.skeleton__new-item--like {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -149,13 +149,13 @@ NEW ITEMS
 
 */
 
-.author_list_info--skeleton{
+.author_list_info--skeleton {
     position: relative;
     margin-left: 70px;
     height: 50px;
 }
 
-.skeleton__top-seller--name{
+.skeleton__top-seller--name {
     position: absolute;
     left: 0;
     top: 0;
@@ -163,7 +163,7 @@ NEW ITEMS
     height: 20px;
 }
 
-.skeleton__top-seller--price{
+.skeleton__top-seller--price {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -171,15 +171,47 @@ NEW ITEMS
     height: 20px;
 }
 
-/* .explore__items--wrapper{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+/*
+
+    AUTHOR
+
+*/
+
+.text-light {
+    background-repeat: no-repeat !important;
+    background-size: 100vw !important;
 }
 
-.explore__item{
-    width: 20%;
-} */
+.author__skeleton-pp {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.author__skeleton-info--wrapper {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.author__skeleton-name {
+    width: 200px;
+    height: 24px;
+}
+
+.author__skeleton-tag {
+    width: 100px;
+    height: 16px;
+}
+
+.author__skeleton-address {
+    width: 200px;
+    height: 16px;
+}
+
+.author__skeleton-button {
+    width: 150px;
+    height: 40px;
+}
