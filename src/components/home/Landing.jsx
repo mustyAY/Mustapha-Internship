@@ -13,7 +13,7 @@ const Landing = () => {
       once: true
     })
   }, [])
-  
+
   return (
     <section
       id="section-hero"
@@ -28,7 +28,7 @@ const Landing = () => {
             <div className="col-md-6">
               <div className="spacer-single"></div>
               <h6 data-aos="fade-zoom-in"
-              data-aos-delay="500">
+                data-aos-delay="500">
                 <span
                   className="text-uppercase id-color-2"
                 >
@@ -37,7 +37,7 @@ const Landing = () => {
               </h6>
               <div className="spacer-10"></div>
               <h1 data-aos="fade-up"
-              data-aos-delay="750"
+                data-aos-delay="750"
               >Create, sell or collect digital items.</h1>
               <p className="lead"
                 data-aos="fade-up"

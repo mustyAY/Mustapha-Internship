@@ -20,8 +20,8 @@ const LandingIntro = () => {
               <i className="bg-color-2 i-boxed icon_wallet" data-aos="fade-up"></i>
               <div className="text">
                 <h4 className=""
-                data-aos="fade-zoom-in"
-                data-aos-duration="250"
+                  data-aos="fade-zoom-in"
+                  data-aos-duration="250"
                 >Set up your wallet</h4>
                 <p data-aos="fade-up"
                   data-aos-delay="250">
@@ -37,8 +37,8 @@ const LandingIntro = () => {
               <i className="bg-color-2 i-boxed icon_cloud-upload_alt" data-aos="fade-up"></i>
               <div className="text">
                 <h4 className=""
-                data-aos="fade-zoom-in"
-                data-aos-duration="250"
+                  data-aos="fade-zoom-in"
+                  data-aos-duration="250"
                 >Add your NFT's</h4>
                 <p data-aos="fade-up"
                   data-aos-delay="250">
@@ -54,8 +54,8 @@ const LandingIntro = () => {
               <i className="bg-color-2 i-boxed icon_tags_alt" data-aos="fade-up"></i>
               <div className="text">
                 <h4 className=""
-                data-aos="fade-zoom-in"
-                data-aos-duration="250"
+                  data-aos="fade-zoom-in"
+                  data-aos-duration="250"
                 >Sell your NFT's</h4>
                 <p data-aos="fade-up"
                   data-aos-delay="250">
