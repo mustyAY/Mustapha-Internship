@@ -222,43 +222,43 @@ NEW ITEMS
 
 */
 
-.skeleton-item__info{
+.skeleton-item__info {
     padding: 12px 12px 0 0 !important;
 }
 
-.skeleton-item__details--image{
+.skeleton-item__details--image {
     height: 480px;
     width: 100%;
 }
 
-.skeleton-item__details--title{
+.skeleton-item__details--title {
     height: 40px;
     width: 60%;
 }
 
 .skeleton-item__details--views,
-.skeleton-item__details--likes{
+.skeleton-item__details--likes {
     height: 30px;
     width: 80px;
 }
 
-.skeleton-item__details--description{
+.skeleton-item__details--description {
     height: 80px;
     width: 100%;
 }
 
-.skeleton-item__details--pp{
+.skeleton-item__details--pp {
     height: 50px;
     width: 50px;
     border-radius: 50%;
 }
 
-.skeleton-item__details--name{
+.skeleton-item__details--name {
     height: 20px;
     width: 125px;
 }
 
-.skeleton-item__details--price{
+.skeleton-item__details--price {
     height: 20px;
     width: 75px;
 }

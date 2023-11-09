@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const TopSellers = () => {
 
@@ -16,6 +18,10 @@ const TopSellers = () => {
 
   useEffect(() => {
     getTopSellers();
+    Aos.init({
+      duration: 1500,
+      once: true
+    });
   }, [])
 
 
@@ -25,7 +31,12 @@ const TopSellers = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className="text-center">
-              <h2>Top Sellers</h2>
+              <h2
+                data-aos="fade-zoom-in"
+                data-aos-duration="200"
+              >
+                Top Sellers
+              </h2>
               <div className="small-border bg-color-2"></div>
             </div>
           </div>
@@ -33,7 +44,10 @@ const TopSellers = () => {
             <ol className="author_list">
               {!loading ?
                 topSellers.map((topSeller) => (
-                  <li key={topSeller.id}>
+                  <li key={topSeller.id}
+                    data-aos="fade-zoom-in"
+                    data-aos-duration="200"
+                  >
                     <div className="author_list_pp">
                       <Link to={`/author/${topSeller.authorId}`}>
                         <img
@@ -53,8 +67,8 @@ const TopSellers = () => {
                 new Array(12).fill(0).map((_, index) => (
                   <li key={index}>
                     <div className="author_list_pp">
-                        <div className="skeleton-box skeleton-pp"></div>
-                        <i className="fa skeleton-fa"></i>
+                      <div className="skeleton-box skeleton-pp"></div>
+                      <i className="fa skeleton-fa"></i>
                     </div>
                     <div className="author_list_info author_list_info--skeleton">
                       <div className="skeleton-box skeleton__top-seller--name"></div>
