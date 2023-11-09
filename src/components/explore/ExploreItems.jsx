@@ -51,6 +51,8 @@ const ExploreItems = () => {
             key={exploreItem.id}
             className="d-item col-lg-3 col-md-6 col-sm-6 col-xs-12"
             style={{ display: "block", backgroundSize: "cover" }}
+            data-aos="fade-zoom-in"
+            data-aos-delay="100"
           >
             <NftCard item={exploreItem} />
           </div>

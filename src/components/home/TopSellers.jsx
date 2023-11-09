@@ -40,15 +40,14 @@ const TopSellers = () => {
               <div className="small-border bg-color-2"></div>
             </div>
           </div>
-          <div
-            className="col-md-12"
-            data-aos="fade-zoom-in"
-            data-aos-duration="200"
-          >
+          <div className="col-md-12">
             <ol className="author_list">
               {!loading ?
                 topSellers.map((topSeller) => (
-                  <li key={topSeller.id}>
+                  <li key={topSeller.id}
+                    data-aos="fade-zoom-in"
+                    data-aos-duration="200"
+                  >
                     <div className="author_list_pp">
                       <Link to={`/author/${topSeller.authorId}`}>
                         <img
